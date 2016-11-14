@@ -1,0 +1,7 @@
+{
+    "require": {
+        "codeception/codeception": "2.1.*",
+        "codeception/specify": "*",
+        "codeception/verify": "*"
+    }
+}

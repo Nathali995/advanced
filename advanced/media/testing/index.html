@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Graficación y Animación</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+
+                    <h1>Técnicas de Prueba </h1>
+                    <h3>(ISO/IEC 29119-4)</h3>
+                    <ul>
+                        <li>Guzman Quesada Paul</li>
+                        <li>Mejia Cruel Nathali</li>
+                        <li>Garcia Tomas</li>
+                        
+                    </ul> 
+                </section>
+
+                <section>
+                    <h1>Definicion</h1>
+                    <p>Es una norma estándar internacional que cubre las técnicas 
+                        de diseño de pruebas de software que pueden ser utilizados durante el proceso de 
+                        diseño de la prueba y la implementación dentro de cualquier organización o modelo de 
+                        ciclo de vida de desarrollo de software. </p>
+
+
+                </section>
+                <section>
+                    <h2>Tipos</h2>
+                    <p>ISO / IEC / IEEE 29119-4 cubre una variedad de técnicas de pruebas de software dinámico de uso común:</p>
+                    <img src="testing.JPG" alt=""/>
+                </section>
+
+                <section>
+                    <h2>Equivalencia de partición</h2>
+                    <p>Es una técnica de prueba que divide el dominio de entrada de un programa en clases de 
+                    datos de los que se pueden derivar casos de prueba.</p>
+                </section>
+
+                <section>
+                    <h2>Árbol de clasificación</h2>
+                    <p>El método de árbol de clasificación consta de dos pasos principales:
+                    <ul>  
+                        <li>Identificación de los aspectos relevantes (los llamados clasificaciones ) y sus valores 
+                            correspondientes (llamadas clases ), así como</li>
+                        <li>Combinación de diferentes clases de todas las clasificaciones en los casos de prueba.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Analisis de los Valores Limites</h2>
+                    <p>Esta Técnica prueba la habilidad del programa para manejar datos que se encuentran en los límites aceptables.
+                        En lugar de seleccionar cualquier elemento de una clase de equivalencia, el AVL lleva a la elección de casos 
+                        de prueba en los extremos de la clase</p>
+                </section>
+
+                <section>
+                    <h2>Pruebas de Sintaxis</h2>
+                    <p>supone la comprobación de las entradas del sistema y por lo general está automatizado porque las 
+                        pruebas de sintaxis produce un gran número de pruebas. insumos internos y externos tienen que 
+                        ajustarse a los formatos siguientes:
+                    </p>
+                    <ul>
+                        <li>Formato de los datos de entrada de los usuarios.</li>
+                        <li>Formatos de archivo.</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Técnicas de Prueba combinatoria</h2>
+                    <p>Es una combinatoria método de pruebas de software que, para cada par de parámetros de entrada a un sistema 
+                    (típicamente, un software algoritmo ), pruebas de todas las posibles combinaciones discretas de esos parámetros. 
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Pruebas de Rama</h2>
+                    <p>Su objetivo es garantizar que cada uno de los posibles rama de cada punto de decisión se 
+                        ejecuta asegurar al menos una vez y por lo tanto que se ejecuta todo el código accesible.
+                        Ayuda a la verificación de todas las ramas en el código de asegurarse de que ninguna rama 
+                        conduce a un comportamiento anormal de la aplicación.</p>
+                </section>
+
+                <section>
+                    <h2>Modificado Cobertura Condición Decisión de Prueba </h2>
+                    <p></p>
+                </section>
+
+                <section>
+                    <h2>Pruebas de flujo de datos</h2>
+                    <p>es un conjunto de estrategias de prueba basados ​​en la selección de caminos a través de flujo 
+                        de control del programa con el fin de explorar las secuencias de eventos relacionados con el 
+                        estado de las variables u objetos de datos</p>
+                </section>
+                
+                <section>
+                    <h2>Error de Adivinanzas</h2>
+                    <p>Error adivinar es una técnica de prueba que hace uso de la habilidad de un probador, 
+                        la intuición y la experiencia en la prueba de aplicaciones similares para identificar 
+                        defectos que pueden no ser fáciles de captar por las técnicas más formales. 
+                        Por lo general se realiza después de las técnicas más formales se han completado.</p>
+                </section>
+
+
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    {src: 'plugin/markdown/marked.js'},
+                    {src: 'plugin/markdown/markdown.js'},
+                    {src: 'plugin/notes/notes.js', async: true},
+                    {src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                            hljs.initHighlightingOnLoad();
+                        }}
+                ]
+            });
+        </script>
+    </body>
+</html>
